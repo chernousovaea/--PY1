@@ -8,7 +8,7 @@ month = 0  # количество месяцев, которое можно пр
 while money_capital > 0:
     money_capital += salary
     money_capital -= spend
-    spend = spend * 1.05
+    spend = spend * 1 + 0.05
     month += 1
     if money_capital < spend:
         break
