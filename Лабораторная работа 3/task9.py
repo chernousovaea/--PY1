@@ -7,6 +7,6 @@ need_money = 0  # количество денег, чтобы прожить 10 
 
 for i in range(10):
     need_money = need_money + spend
-    spend = spend*1.03
+    spend = spend*1 + 0.03
 
 print(round(need_money-(salary*10))) # TODO Оформить решение
