@@ -12,6 +12,18 @@ def get_count_char(str_):
 
     return dict_letters
 
+def get_dict_symbol(dict):
+    dict_percentage_letters = {}
+    count = 0
+
+    for i in dict:
+       count += dict[i]
+
+    for i in dict:
+        dict_percentage_letters[i] = round((dict[i] / count * 100), 1)
+
+    return dict_percentage_letters
+
 main_str = """
     Данное предложение будет разбиваться на отдельные слова. 
     В качестве разделителя для встроенного метода split будет выбран символ пробела. На выходе мы получим список отдельных слов. 
