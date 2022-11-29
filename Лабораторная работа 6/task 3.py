@@ -27,7 +27,9 @@ data = [
     ['-118.360000', '33.820000', '28.000000', '67.000000', '15.000000', '49.000000', '11.000000', '6.135900', '330000.000000'],
 ]
 
-to_csv_file()# TODO вызвать функцию to_csv_file и записать данные в файл
+absol_path = os.path.join("headers_list", "data")
+
+to_csv_file(absol_path)# TODO вызвать функцию to_csv_file и записать данные в файл
 
 with open(OUTPUT_FILE) as output_f:
     for line in output_f:
